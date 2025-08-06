@@ -1,0 +1,43 @@
+//git -> ibarat penyimpanan file (code dsb), bisa save dan load
+// branch default : main
+
+//command git
+git init: inisialisasi git, wajib pertama
+git status: cek status, misalnya ada file yang berubah/menunggu commit
+git add <namafile>: tambah file untuk di commit (save)
+git add . : tambah semua file untuk di commit
+git commit -m "pesan commit" : simpan ke penyimpanan git
+git log : liat history commit, ada sesi tiap history
+git checkout <sesidarilog> : load sementara ke sesi tersebut, jika ganti branch, dihapus
+git switch -c <namabranch> : simpan load sementara tsb ke branch baru
+git branch <namabranch> : buat branch kosong baru
+git checkout -b <branch> : pindah ke branch (timeline) tersebut, jika tidak ada otomatis buat
+git branch -d <namabranch> : hapus branch
+git branch : liat semua branch
+git diff <branchlain> : liat perbedaan branch
+git merge <branchlain> : gabung branchlain ke branch ini
+
+git <command> -h : list command syntax
+git help <command> : list command syntax lebih lengkap di chrome dsb.
+git config --list : list konfigurasi git saat ini
+
+//remote : server(GitHub, GitLab) ; lokal : computer (git)
+git remote add origin <url github> : sambung url GitHub ke 'origin' local git
+git remote -v : liat url remote yg terhubung (fetch push)
+git remote show origin : liat lebih detailnya remote origin
+git push origin <branch> : simpan branch ke penyimpanan remote
+git push -u origin <branch>: simpan dan ingat branch remote ke branch ini
+git pull origin <branch> : load branch remote ke branch local saat ini
+
+git branch -vv : liat branch local dan hubungan otomatisnya ke remote
+git branch -u origin/<branch> : sambung untuk push/pull lebih cepat ke remote,
+nama branch local dan branch remote harus sama
+
+//command lain (bash)
+ls -la : liat file & direktori termasuk hidden file
+mkdir : buat direktori
+cd /<drive>/ : pindah ke drive apa
+cd <direktori>/ : pindah ke directori apa
+cd .. : pindah ke direktori sebelumnya
+
+
